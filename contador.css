@@ -16,11 +16,12 @@
 
 body {
     font-family: 'Roboto', sans-serif;
+    background-color: var(--preto);
 }
 
 .container {
     height: 100vh;
-    background-color: var(--preto);
+    background-color: transparent;
 }
 
 .cabecalho {
