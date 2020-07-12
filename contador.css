@@ -88,3 +88,13 @@ body {
     font-size: 4.5rem;
     color: var(--branco);
 }
+
+.tempo + span {
+    margin-top: 10px;
+    color: var(--cinza);
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px dashed var(--verde);
+    display: none;
+}

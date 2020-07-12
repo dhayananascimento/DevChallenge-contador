@@ -2,9 +2,10 @@ const elementoDias = document.querySelector('#dias span')
 const elementoHoras = document.querySelector('#horas span')
 const elementoMinutos = document.querySelector('#minutos span')
 const elementoSegundos = document.querySelector('#segundos span')
+const aviso = document.getElementById("aviso")
 
 const dataURL   = window.location.search.replace("?", "").split("=")[1]
-const dataFutura = moment(dataURL.split('/').reverse().join('-'))
+const dataFutura = dataURL ? moment(dataURL.split('/').reverse().join('-')) : moment()
 const dataAtual = moment()
 
 
@@ -13,7 +14,7 @@ function contador() {
     
     if(verificaValidadeData) {
         atualizaValores([])
-        alert("Data inserida é inválida, atual ou já passou!")
+        aviso.style.display = "block"
         return
     }
 
