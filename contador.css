@@ -62,8 +62,7 @@ body {
     width: 100%;
     padding: 10px;  
     overflow-y: auto;
-    height: calc(100vh - 80px);
-
+    height: auto;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -106,4 +105,22 @@ body {
     padding: 10px;
     border: 2px dashed var(--verde);
     display: none;
+}
+
+@media (max-width:600px) {
+    .cabecalho {
+        height: auto;
+        padding: 10px;
+        background-color: transparent;
+        
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .tempo {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
 }
